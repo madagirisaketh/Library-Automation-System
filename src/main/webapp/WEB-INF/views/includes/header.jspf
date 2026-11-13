@@ -1,0 +1,34 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<c:set var="isAdmin" value="${sessionScope.user.role == 'ADMIN'}" />
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="${ctx}/dashboard">
+      <span class="brand-logo">&#128218;</span>
+      <span>Library<small>Automation</small></span>
+    </a>
+    <nav class="side-nav">
+      <a class="${activePage == 'home' ? 'active' : ''}" href="${ctx}/dashboard"><i>&#127968;</i>Dashboard</a>
+      <a class="${activePage == 'books' ? 'active' : ''}" href="${ctx}/books"><i>&#128214;</i>Books</a>
+      <c:if test="${isAdmin}">
+        <a class="${activePage == 'categories' ? 'active' : ''}" href="${ctx}/categories"><i>&#128450;</i>Categories</a>
+        <a class="${activePage == 'students' ? 'active' : ''}" href="${ctx}/students"><i>&#127891;</i>Students</a>
+      </c:if>
+      <a class="${activePage == 'borrow' ? 'active' : ''}" href="${ctx}/borrow"><i>&#128257;</i>${isAdmin ? 'Issue &amp; Return' : 'My Borrowings'}</a>
+      <c:if test="${isAdmin}">
+        <a class="${activePage == 'users' ? 'active' : ''}" href="${ctx}/users"><i>&#128101;</i>Users</a>
+      </c:if>
+    </nav>
+    <div class="side-user">
+      <div class="avatar">${fn:toUpperCase(fn:substring(sessionScope.user.username, 0, 1))}</div>
+      <div class="who">
+        <strong><c:out value="${sessionScope.user.username}" /></strong>
+        <span>${sessionScope.user.role}</span>
+      </div>
+      <a class="logout-btn" href="${ctx}/logout" title="Logout">&#128682;</a>
+    </div>
+  </aside>
+  <main class="main">
+    <c:if test="${not empty flashOk}"><div class="alert alert-ok">&#10004; <c:out value="${flashOk}" /></div></c:if>
+    <c:if test="${not empty flashErr}"><div class="alert alert-err">&#9888; <c:out value="${flashErr}" /></div></c:if>
