@@ -14,11 +14,11 @@ The application follows a layered architecture to separate presentation, request
 
 | Login | Admin Dashboard |
 |---|---|
-| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
+| ![Login]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Login.png") | ![Dashboard]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Dashboard.png") |
 
 | Books | Issue and Return |
 |---|---|
-| ![Books](docs/screenshots/books.png) | ![Borrow](docs/screenshots/borrow.png) |
+| ![Books]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Books.png") | ![Borrow]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Borrow.png") |
 
 ## Key Features
 
