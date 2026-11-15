@@ -14,11 +14,11 @@ The application follows a layered architecture to separate presentation, request
 
 | Login | Admin Dashboard |
 |---|---|
-| ![Login]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Login.png") | ![Dashboard]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Dashboard.png") |
+| ![Login]("C:\Users\Dhanush\eclipse-workspace\LibraryAutomation System new\images\Login.png) | ![Dashboard](C:\Users\Dhanush\eclipse-workspace\LibraryAutomation System new\images\Dashboard.png) |
 
 | Books | Issue and Return |
 |---|---|
-| ![Books]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Books.png") | ![Borrow]("C:\Users\Dhanush\OneDrive\Pictures\Screenshots\Borrow.png") |
+| ![Books](C:\Users\Dhanush\eclipse-workspace\LibraryAutomation System new\images\Borrow.png) | ![Borrow](C:\Users\Dhanush\eclipse-workspace\LibraryAutomation System new\images\Books.png) |
 
 ## Key Features
 
